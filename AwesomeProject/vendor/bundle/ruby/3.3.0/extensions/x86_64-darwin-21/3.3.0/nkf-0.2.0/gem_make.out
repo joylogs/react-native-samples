@@ -1,0 +1,19 @@
+current directory: /Users/joy.banerjee/work/react-samples/AwesomeProject/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+/usr/local/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/joy.banerjee/work/react-samples/AwesomeProject/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240424-20653-hjwcsd sitelibdir\=./.gem.20240424-20653-hjwcsd clean
+
+current directory: /Users/joy.banerjee/work/react-samples/AwesomeProject/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240424-20653-hjwcsd sitelibdir\=./.gem.20240424-20653-hjwcsd
+compiling nkf.c
+linking shared-object nkf.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/joy.banerjee/work/react-samples/AwesomeProject/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240424-20653-hjwcsd sitelibdir\=./.gem.20240424-20653-hjwcsd install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20240424-20653-hjwcsd
+
+current directory: /Users/joy.banerjee/work/react-samples/AwesomeProject/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240424-20653-hjwcsd sitelibdir\=./.gem.20240424-20653-hjwcsd clean
