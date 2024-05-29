@@ -22,7 +22,7 @@ function Login() {
             </View>
 
             {/* Username or Email Input Field */}
-            <View style={style.buttonStyle}>
+            <View style={styles.buttonStyle}>
                 <View style={styles.emailInput}>
                     <Input
                         InputLeftElement={
@@ -90,7 +90,7 @@ function Login() {
             </View>
 
             {/* Box */}
-            <View>
+            <View style={styles.boxStyle}>
                 <Box
                     onPress={() => navigation.navigate('#')}
                     style={{ height: 80, width: 80 }}
@@ -105,7 +105,7 @@ function Login() {
                     <AspectRatio ratio={1 / 1}>
                         <Image roundedTop={'lg'}
                             source={{
-                                uri: 'https://b;a;ba;a.jpg',
+                                uri: 'https://cdn-icons-png.flaticon.com/512/731/731985.png',
                             }}
                             alt='image'
                         />
@@ -128,7 +128,7 @@ function Login() {
                     <AspectRatio ratio={1 / 1}>
                         <Image roundedTop={'lg'}
                             source={{
-                                uri: 'https://b;a;ba;a.jpg',
+                                uri: 'https://cdn-icons-png.flaticon.com/512/1384/1384065.png',
                             }}
                             alt='image'
                         />
@@ -151,7 +151,7 @@ function Login() {
                     <AspectRatio ratio={1 / 1}>
                         <Image roundedTop={'lg'}
                             source={{
-                                uri: 'https://b;a;ba;a.jpg',
+                                uri: 'https://cdn-icons-png.flaticon.com/512/281/281764.png',
                             }}
                             alt='image'
                         />
@@ -174,16 +174,79 @@ function Login() {
                     <AspectRatio ratio={1 / 1}>
                         <Image roundedTop={'lg'}
                             source={{
-                                uri: 'https://b;a;ba;a.jpg',
+                                uri: 'https://cdn-icons-png.flaticon.com/512/5968/5968764.png',
                             }}
                             alt='image'
                         />
 
                     </AspectRatio>
-
                 </Box>
+
             </View>
-
         </View>
     )
 }
+
+export default () => {
+    return (
+        <NativeBaseProvider>
+            <Login></Login>
+        </NativeBaseProvider>
+    )
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff'
+    },
+    LoginText: {
+        marginTop: 100,
+        fontSize: 30,
+        fontWeight: 'bold',
+    },
+    Middle: {
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    text2: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        paddingTop: 5
+    },
+    signupText: {
+        fontWeight: 'bold',
+    },
+    emailInput: {
+        marginTop: 10,
+        marginRight: 5
+    },
+    buttonStyle: {
+        marginTop: 15,
+        marginLeft: 15,
+        marginRight: 15,
+    },
+    buttonStyleX: {
+        marginTop: 12,
+        marginLeft: 15,
+        marginRight: 15
+    },
+    buttonDesign: {
+        backgroundColor: '#026efd'
+    },
+    lineStyle: {
+        flexDirection: 'row',
+        marginTop: 30,
+        marginLeft: 15,
+        marginRight: 15,
+        alignItems: 'center'
+    },
+    boxStyle: {
+        flexDirection: 'row',
+        marginTop: 30,
+        marginLeft: 15,
+        marginRight: 15,
+        justifyContent: 'space-around'
+    }
+
+})
